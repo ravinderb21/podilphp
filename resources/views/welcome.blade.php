@@ -9,15 +9,22 @@
 
                 <div class="card-body">
                     @if (session('status'))
+                    <div class="row">
                         <div class="alert alert-success">
                             {{ session('status') }}
                         </div>
+                    </div>
                     @endif
-                        <img class="img-thumbnail img-fluid rounded" src="images/family.jpg">
-                        <h2 class="card-title">Share your <span class="badge badge-info">life moments.</span></h2>
-                        <p class="card-text">Sign up and start uploading images.</p>
-                        <p class="card-text">Share with your friends and family.</p>
+                    <div class="row">
+                        <div class="col-sm">
+                            <img class="img-fluid rounded" src="images/family.jpg">
                         </div>
+                        <div class="col-sm">
+                            <h2 class="card-title">Share your <span class="badge badge-info">life moments.</span></h2>
+                            <p class="card-text">Sign up and start uploading images.</p>
+                            <p class="card-text">Share with your friends and family.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
